@@ -1,14 +1,19 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
-
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
+class Circle(val radian : Double ){
+    fun run(){
+        println("Ini fungsi untuk perhitungan Lingkaran")
+        println("Luas : "+area(radian))
+        println("Keliling : "+circumference(radian))
     }
+    private fun area(radian: Double):Double{
+        val phi: Double =3.14
+        return (phi*radian*radian)
+    }
+    private fun circumference(radian: Double):Double{
+        val phi: Double =3.14
+        return (2*phi*radian)
+    }
+}
+
+fun main() {
+        Circle(7.00).run()
 }
