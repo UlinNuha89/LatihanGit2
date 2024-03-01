@@ -12,3 +12,19 @@ fun main() {
         println("i = $i")
     }
 }
+
+class Triangle() {
+    var width: Double = 8.0
+    var height: Double = 5.0
+    var sideC: Double = 3.0
+    var sideB: Double = 3.0
+    var area: Double = 0.0
+    var circumference: Double = 0.0
+    fun circumferenceTriangle() {
+        circumference = width + sideB + sideC
+    }
+
+    fun areaTriangle() {
+        area = 0.5 * width * height
+    }
+}
